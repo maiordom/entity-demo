@@ -1,0 +1,39 @@
+@import '../../assets/variables.css';
+
+.head {
+}
+
+.title {
+    width: 220px;
+    font-size: $font-size-big;
+    flex-shrink: 0;
+    height: 40px;
+    border-bottom: 1px solid color($black a(20%));
+}
+
+.claim {
+    width: 50px;
+    padding: 0 5px;
+    text-align: center;
+    flex-shrink: 0;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid color($black a(20%));
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+}
+
+.claimName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

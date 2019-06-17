@@ -1,0 +1,34 @@
+@import '../../../assets//variables.css';
+
+.intervalItem {
+    width: 30px;
+}
+
+.intervalSpacer {
+    color: color($black a(30%));
+    margin: 0 5px;
+    align-self: center;
+}
+
+.intervalInput input {
+    text-align: center;
+
+    &::placeholder {
+        color: color($black a(30%));
+        text-align: center;
+    }
+
+    &::-webkit-inner-spin-button, 
+    &::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+}
+
+.date {
+    width: 110px;
+}
+
+.time {
+    width: 50px;
+}

@@ -1,0 +1,121 @@
+@import '../../assets/variables.css';
+
+.documentTab {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 11px 15px;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.activeSidebarTab {
+    background-color: $white;
+}
+
+.sidebarTab {
+    cursor: pointer;
+    padding: 11px 15px;
+    border-radius: 5px;
+}
+
+.addDocumentButton {
+    margin-top: 4px;
+}
+
+.serviceTab {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    font-size: 15px;
+    line-height: 30px;
+
+    .arrow {
+        transition: .2s;
+        transform: rotate(180deg);
+
+        &.opened {
+            transition: .2s;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.addVersionButton {
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 7px;
+    width: 100%;
+    background-color: $green;
+    cursor: pointer;
+    text-align: center;
+    font-size: 11px;
+}
+
+.documentHead, .versionHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        display: inline-flex;
+    }
+}
+
+.documentBody, .versionBody {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    span {
+        font-size: 15px;
+        letter-spacing: -0.3px;
+        white-space: nowrap;
+    }
+}
+
+.isPublished, .isUnpublished {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.versionFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isPublished {
+    background-color: $green;
+}
+
+.isUnpublished {
+    background-color: $orangered;
+}
+
+.sidebarCollapsed {
+    width: 20px;
+}
+
+.addVersionButton {
+    margin-top: 5px;
+}
+
+.whenCreated {
+    font-size: 11px;
+    line-height: 20px;
+    color: color($black a(50%));
+}
+
+.documentsList {
+    overflow: hidden;
+    margin-bottom: 25px;
+}

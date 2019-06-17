@@ -1,0 +1,6 @@
+.eventType {
+    max-width: 235px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

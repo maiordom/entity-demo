@@ -1,0 +1,39 @@
+@import '../../../assets/variables.css';
+
+.banner {
+    box-shadow: 0 5px 20px 0 color($black a(10%));
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $white;
+    cursor: pointer;
+}
+
+.banner + .banner {
+    margin-top: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 168px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+}
+
+.add {
+    cursor: pointer;
+    background: $white;
+    height: 168px;
+
+    path {
+        fill: color($black a(10%));
+    }
+}

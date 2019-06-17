@@ -1,0 +1,9 @@
+@import '../../../assets/variables.css';
+
+.testAccount {
+    @mixin small-text;
+    
+    border-radius: 3px;
+    padding: 3px 10px;
+    background: $gray-pagination;
+}

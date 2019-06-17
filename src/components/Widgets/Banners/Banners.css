@@ -1,0 +1,5 @@
+@import '../../../assets/variables.css';
+
+.container {
+    color: $white;
+}

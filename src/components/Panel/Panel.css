@@ -1,0 +1,15 @@
+@import '../../assets/variables.css';
+
+.container {
+    padding: $size-s $size-xl;
+    border-top: 1px solid color($black a(10%));
+    background: color($athens-gray a(95%));
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 250px;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

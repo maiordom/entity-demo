@@ -1,0 +1,58 @@
+@import '../../assets//variables.css';
+
+.cell {
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.head {
+    height: 45px;
+    font-size: $font-size-big;
+    border-bottom: 1px solid color($black a(20%));
+}
+
+.row {
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 3px solid color($green a(0));
+    border-top: 3px solid color($green a(0));
+
+    &:hover {
+        background: color($black a(5%));
+
+        :global .hiddable {
+            display: block;
+        }    
+    }
+}
+
+:global {
+    .hiddable {
+        display: none;
+    }
+}
+
+.dragActive {
+    transition: transform 0s;
+    z-index: 1;
+    background: color($white a(90%)) !important;
+}
+
+.activeDropzone {
+    border-bottom: 3px solid $green;
+}
+
+.wrapper {
+    position: relative;
+    outline: none;
+    transition: transform 0.2s;
+    user-select: none;
+    cursor: grab;
+    touch-action: none;
+}
+
+:global .dragging :local .wrapper {
+    cursor: grabbing;
+}

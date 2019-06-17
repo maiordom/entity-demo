@@ -1,0 +1,34 @@
+@import '../../assets/variables.css';
+
+.list {
+    margin-bottom: $size-m;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid color($black a(10%));
+}
+
+.tab {
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    padding: 15px 0;
+    position: relative;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+}
+
+.tabSelected {
+    &:after {
+        display: block;
+        content: '';
+        height: 2px;
+        background: $yellow;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.tab + .tab {
+    margin-left: 25px;
+}

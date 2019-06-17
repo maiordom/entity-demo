@@ -1,0 +1,20 @@
+@import '../../assets/variables.css';
+
+.tree {
+    border-radius: 8px;
+    background: $white;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.items {
+    flex-basis: 100%;
+}
+
+.itemsInner {
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.node {}

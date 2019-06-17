@@ -1,0 +1,32 @@
+@import '../../assets//variables.css';
+
+.container {
+    background: color($white a(50%));
+    border: 2px solid color($black a(20%));
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.active {
+    border-color: $green;
+    background: $white;
+}
+
+.dot,
+.quantity {
+    color: color($black a(50%));
+}
+
+.rub {
+    font-size: $font-size-small;
+}
+
+.icon path {
+    fill: color($black a(40%));
+}

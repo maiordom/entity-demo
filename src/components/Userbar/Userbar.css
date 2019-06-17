@@ -1,0 +1,34 @@
+@import '../../assets/variables.css';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    background: #4A90E2;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.username {
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+}
+
+.logout {
+    font-size: $font-size-small;
+    cursor: pointer;
+}

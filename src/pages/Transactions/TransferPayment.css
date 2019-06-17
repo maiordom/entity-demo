@@ -1,0 +1,9 @@
+.suggestOption {
+    min-height: 30px;
+}
+
+.spinner {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+}

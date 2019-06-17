@@ -1,0 +1,32 @@
+@import '../../../assets/variables.css';
+
+.news {
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: $white;
+}
+
+.news > div {
+    pointer-events: none;
+}
+
+.add {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $white;
+    cursor: pointer;
+    background: $white;
+    height: 90px;
+
+    svg {
+        width: 40px;
+    }
+
+    path {
+        fill: color($black a(10%));
+    }
+}

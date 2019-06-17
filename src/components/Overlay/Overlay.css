@@ -1,0 +1,84 @@
+@import '../../assets/variables.css';
+
+.container {
+    @mixin col 15;
+
+    box-sizing: border-box;
+    background: $athens-gray;
+    height: 100%;
+    padding-bottom: 110px;
+    overflow: auto;
+    transition: width 0.2s;
+}
+
+.wide {
+    @mixin col 17;
+}
+
+.panel {
+    align-items: center;
+    padding: $size-s $size-l;
+    border-top: 1px solid color($black a(10%));
+    background: color($athens-gray a(95%));
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+.paranja {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: color($black a(50%));
+    opacity: 0;
+    transition: 0.2s opacity;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(100%);
+    transition: 0.2s transform;
+    display: flex;
+}
+
+.primary {
+    &.paranja,
+    &.content {
+        z-index: 100;
+    }
+}
+
+.secondary {
+    &.paranja,
+    &.content {
+        z-index: 101;
+    }
+}
+
+.visibleContent {
+    transform: translate(0);
+}
+
+.visible {
+    opacity: 1;
+}
+
+.errorContainer {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.error {
+    text-align: left;
+    margin: 0 15px;
+    white-space: nowrap;
+}

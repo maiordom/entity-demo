@@ -1,0 +1,19 @@
+@import '../../assets/variables.css';
+
+.button + .button {
+    margin-left: 10px;
+}
+
+.errorLabel {
+    @mixin small-text;
+
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 200px;
+    color: $orangered;
+}
+
+.makeTest {
+    height: 30px;
+}

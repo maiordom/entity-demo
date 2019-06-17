@@ -1,0 +1,134 @@
+@import '../../assets/variables.css';
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 39px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: margin 0.25s ease;
+
+    &.hasDocuments {
+        margin-left: 220px;
+    }
+
+    &.hasVersions {
+        margin-left: 415px;
+    }
+
+    &.collapsed {
+        margin-left: 35px;
+    }
+}
+
+.panelContainer {
+    padding: 0 30px;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+
+    .panel {
+        display: flex;
+        padding: 15px;
+        border-radius: 5px 5px 0 0;
+        background-color: $dark-white;
+        box-shadow: 0 1px 9px 0 color($black a(40%));
+    }
+}
+
+.sidebarContainer {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    transition: width 0.25s ease;
+
+    &.hasDocuments {
+        width: 185px;
+    }
+
+    &.hasVersions {
+        width: 385px;
+    }
+
+    &.collapsed {
+        width: 0;
+    }
+}
+
+.error {
+    text-align: left;
+    margin: 0 15px;
+    white-space: nowrap;
+}
+
+.hidden {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.showDeleted {
+    margin-bottom: 7px;
+}
+
+.versionTabsSidebar, .documentTabsSidebar {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.scroll {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.collapse {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -18px;
+    margin: auto;
+    z-index: 0;
+    border-radius: 100%;
+    background-color: $white;
+    box-shadow: 0 5px 20px -10px color($black a(20%));
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 11px;
+        margin: auto;
+        border: 2px solid $black;
+        border-width: 0 2px 2px 0;
+        padding: 2px;
+        transform: rotate(135deg);
+        transition: 0.25s ease;
+    }
+}
+
+.revert:before {
+    transform: rotate(-45deg);
+    transition: 0.25s ease;
+    right: 13px;
+}

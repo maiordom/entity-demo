@@ -1,0 +1,21 @@
+@import '../../assets/variables.css';
+
+.container {
+    margin-left: -30px;
+}
+
+.line {
+    padding: 0 10px 0 30px;
+}
+
+.title {
+    width: 220px;
+    padding: 13px 0;
+}
+
+.service {
+    width: 50px;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+}

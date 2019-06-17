@@ -1,0 +1,17 @@
+@import '../../../assets/variables.css';
+
+.container {
+    background: $white;
+    height: 345px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 color($black a(10%));
+}
+
+.plus path {
+    fill: color($black a(10%));
+}

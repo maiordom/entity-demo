@@ -1,0 +1,71 @@
+@import '../../assets/variables.css';
+
+.container {
+    height: 35px;
+    background: $white;
+    box-shadow: 0 1px 3px color($black a(10%));
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 3px;
+    opacity: 1;
+    transition: background 0.3s;
+}
+
+:global .dragging :local .wrapper {
+    cursor: grabbing;
+}
+
+.hidden > .container {
+    opacity: 0.5;
+}
+
+.level:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    background: color($black a(10%));
+    left: -15px;
+    width: 15px;
+    margin-top: 16px;
+}
+
+.staff {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 13px;
+    top: 35px;
+    width: 2px;
+    bottom: 17px;
+    background: color($black a(10%));
+}
+
+.wrapper {
+    position: relative;
+    outline: none;
+    transition: transform 0.2s;
+    user-select: none;
+    cursor: grab;
+    touch-action: none;
+}
+
+.dragActive {
+    transition: transform 0s;
+}
+
+.activeDropzone > .container {
+    background: color($black a(50%));
+}
+
+.container + .wrapper,
+.wrapper + .wrapper {
+    margin-top: 15px;
+}
+
+.container ~ .wrapper {
+    margin-left: 30px;
+}

@@ -1,0 +1,60 @@
+@import '../../assets/variables.css';
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-left: 250px;
+    overflow-y: auto;
+}
+
+.hasVerticalScroll {
+    overflow-y: hidden;
+}
+
+.scrollable {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.gridCell {
+    height: 345px;
+}
+
+.area {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 140px;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+}
+
+.sideBar {
+    width: 250px;
+    background: $white;
+    box-sizing: border-box;
+    padding: 30px 15px;
+    position: fixed;
+    height: 100%;
+}
+
+.userbar {
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 30px 0 0 60px;
+    font-size: $font-size-xlarge;
+}

@@ -1,0 +1,94 @@
+@import '../../assets/variables.css';
+
+.up {
+    :global {
+        .SingleDatePicker_picker {
+            transform: translateY(1px);
+        }
+    }
+}
+
+.down {
+    :global {
+        .SingleDatePicker_picker {
+            transform: translateY(-1px);
+        }
+    }
+}
+
+.container {
+    border-bottom: 1px solid color($black a(20%));
+}
+
+.hasDate {
+    border-bottom: 1px solid color($black a(50%));
+}
+
+:global {
+    .SingleDatePickerInput_clearDate {
+        padding: 6px;
+        margin: -2px 0 0 0;
+    }
+
+    .CalendarDay__selected,
+    .CalendarDay__selected:active,
+    .CalendarDay__selected:hover {
+        background: $yellow;
+        border: 1px solid $yellow;
+        color: $white;
+    }
+
+    .SingleDatePicker {
+        display: block;
+    }
+
+    .CalendarMonth_caption {
+        font-size: $font-size-medium;
+        padding-bottom: 50px;
+        padding-top: 27px;
+    }
+
+    .CalendarMonth_caption strong {
+        font-weight: normal;
+    }
+
+    .CalendarDay {
+        font-size: $font-size-small;
+    }
+
+    .DayPickerNavigation_button {
+        border: 1px solid color($white a(100%));
+        outline: none;
+    }
+
+    .DateInput_input {
+        font-size: $font-size-medium;
+        font-family: $font-family-default;
+        background: none;
+        border-bottom: none;
+        color: $black;
+        padding: 0 0 4px;
+        line-height: 35px;
+        height: 36px;
+        box-sizing: border-box;
+
+        &::-webkit-input-placeholder { @mixin small-text; }
+        &::-moz-placeholder { @mixin small-text; }
+        &:-ms-input-placeholder { @mixin small-text; }    
+    }
+
+    .SingleDatePickerInput {
+        background: none;
+        display: block;
+    }
+
+    .DateInput {
+        background: none;
+        display: block;
+        width: 100%;
+    }
+
+    .DateInput_input__focused {
+        background: none;
+    }
+}

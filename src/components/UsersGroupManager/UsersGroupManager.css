@@ -1,0 +1,13 @@
+@import '../../assets/variables.css';
+
+.container {
+    @mixin col 14;
+
+    background: $athens-gray;
+    height: 100%;
+}
+
+.title {
+    margin: $size-xl 0 0 $size-l;
+    font-size: $font-size-large;
+}

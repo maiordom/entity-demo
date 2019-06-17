@@ -1,0 +1,29 @@
+@import '../../assets//variables.css';
+
+.suggestOption {
+    min-height: auto;
+    word-break: break-word;
+}
+
+.suggestOption + .suggestOption {
+    margin-top: 15px;
+}
+
+.spinner {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: $font-size-big;
+    color: $orangered;
+}
+
+.id {
+    color: color($black a(50%));
+}

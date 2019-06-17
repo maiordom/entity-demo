@@ -1,0 +1,13 @@
+.container {
+    overflow: hidden;
+    position: relative;
+    align-self: baseline;
+}
+
+.input {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    font-size: 300px;
+}

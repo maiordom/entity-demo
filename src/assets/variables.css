@@ -1,0 +1,29 @@
+@import 'ui/src/assets/variables.css';
+@import 'ui/src/assets/common.css';
+
+$col-width: 35px;
+$gap-width: 15px;
+
+$font-family-default: 'GothamBook';
+
+@define-mixin col $count {
+    width: $col-width * $count + ($count - 1) * $gap-width;
+}
+
+@define-mixin wide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+$unit: 15px;
+
+$size-xxs: 5px;
+$size-xs: 10px;
+$size-s: $unit;
+$size-m: $unit * 2;
+$size-l: $unit * 3;
+$size-xl: $unit * 4;
+$size-xxl: $unit * 8;

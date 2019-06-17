@@ -1,0 +1,41 @@
+@import '../../assets/variables.css';
+
+.environment {
+    font-size: $font-size-small;
+    color: color($black a(50%));
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.service {
+    min-width: 150px;
+    cursor: pointer;
+    background: $white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 10px 10px 0;
+}
+
+.status {
+    display: inline-block;
+    margin-right: 10px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+
+    &.available {
+        background: #0EAA0D;
+    }
+
+    &.notAvailable {
+        background: #DB0D0D;
+    }
+}
+
+.server + .server {
+    margin-top: 15px;
+}
+
+.plus path {
+    fill: color($black a(10%));
+}

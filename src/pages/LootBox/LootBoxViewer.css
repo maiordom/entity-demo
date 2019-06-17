@@ -1,0 +1,48 @@
+@import '../../assets//variables.css';
+
+.createComponent {
+    margin-top: 15px;
+    margin-left: 90px;
+}
+
+.componentsCount,
+.probability {
+    color: color($black a(50%));
+    font-size: $font-size-medium;
+}
+
+.componentsCountRequired,
+.probabilityRequired {
+    color: $orangered;
+}
+
+.hiddenChar {
+    visibility: hidden;
+}
+
+.mainPrize {
+    text-transform: uppercase;
+    height: 25px;
+    line-height: 25px;
+    font-size: $font-size-xsmall;
+    background: color($black a(10%));
+    border-radius: 3px;
+    padding: 0 7px;
+}
+
+.tool {
+    opacity: 0.2;
+}
+
+.info {
+    color: color($black a(50%));
+    height: 47px;
+}
+
+.slug {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 200px;
+}

@@ -1,0 +1,84 @@
+@import '../../assets/variables.css';
+
+.versionForm {
+    flex-grow: 1;
+    background-color: $white;
+    border-radius: 10px 10px 0 0;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.editorHolder {
+    padding-bottom: 100px;
+}
+
+.documentForm {
+    padding-left: 15px;
+}
+
+.metaContainer {
+    padding: 15px 30px 0 15px;
+    height: 205px;
+    position: relative;
+    z-index: 20;
+    transition: height .2s linear, z-index .2s step-end;
+
+    &.collapsed {
+        transition: height .2s linear, z-index .2s step-start;
+        height: 25px;
+        z-index: 1;
+    }
+}
+
+.title {
+    font-size: 20px;
+}
+
+.dataContainer {
+    span {
+        display: inline-block;
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.published {
+    background-color: color($black a(10%));
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.metaControl {
+    justify-content: space-between;
+}
+
+.editorContainer {
+    width: 100%;
+    height: calc(100vh - 181px);
+    margin-top: 15px;
+    transition: height .2s linear;
+    position: relative;
+    z-index: 2;
+
+    &.collapsed {
+        height: calc(100vh - 361px);
+    }
+}
+
+.dateBlock {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.inputsContainer {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+        flex-shrink: 1;
+    }
+}

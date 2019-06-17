@@ -1,0 +1,165 @@
+@import '../../assets/variables.css';
+
+.container {
+    position: relative;
+}
+
+.filters {
+    position: absolute;
+    top: 35px;
+    z-index: 1;
+    display: flex;
+    border-radius: 5px;
+    width: 580px;
+    height: 500px;
+    background: $white;
+    box-shadow: 0 1px 2px color($black a(10%));
+    opacity: 0;
+    left: -999999%;
+    transform: translateY(-10px);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        left 0.2s step-end;
+
+    &.show {
+        opacity: 1;
+        left: 0;
+        transform: translateY(0);
+        transition:
+            opacity 0.2s ease,
+            transform 0.2s ease,
+            left 0s step-start;
+    }
+}
+
+.column {
+    box-sizing: border-box;
+    height: 100%;
+
+    &.left {
+        display: flex;
+        padding: $size-s;
+        width: 185px;
+        flex-shrink: 0;
+        flex-direction: column;
+    }
+
+    &.right {
+        flex-grow: 1;
+    }
+
+    & + & {
+        border-left: 1px solid color($black a(10%));
+    }
+}
+
+.scrollArea {
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.scrollerInner {
+    box-sizing: border-box;
+    padding: $size-s;
+}
+
+.category {
+    position: relative;
+    display: flex;
+    padding: 0 0 3px $size-s;
+    height: 27px;
+    align-items: center;
+
+    &.selected {
+        background-color: color($black a(5%));
+    }
+}
+
+.categoryButton {
+    box-sizing: border-box;
+    margin-left: 10px;
+    border: none;
+    padding: 2px 30px 0 0;
+    height: 100%;
+    flex-grow: 1;
+    background: none;
+    font-family: $font-family-default;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+
+    svg {
+        width: 5px;
+        height: 8px;
+    }
+
+    path {
+        fill: $black;
+    }
+}
+
+.item {
+    & + & {
+        margin-top: $size-xs;
+    }
+}
+
+.presets {
+    border-top: 1px solid color($black a(20%));
+    max-height: 330px;
+    flex-grow: 1;
+}
+
+.presetsContainer {
+    margin-right: -$size-s;
+    max-height: 240px;
+}
+
+.presetButton {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 8px $size-s;
+    cursor: pointer;
+    font-family: $font-family-default;
+    text-align: left;
+    background: none;
+    outline: none;
+
+    &:hover,
+    &.selected {
+        background-color: color($black a(5%));
+    }
+}
+
+.controls {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.control {
+    width: 100%;
+
+    * + & {
+        margin-top: 5px;
+    }
+}
+
+.spinner {
+    height: 25px;
+
+    * + & {
+        margin-top: 5px;
+    }
+}

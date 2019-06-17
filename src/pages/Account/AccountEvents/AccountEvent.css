@@ -1,0 +1,38 @@
+@import '../../../assets/variables.css';
+
+.sign {
+    margin: 0 5px;
+}
+
+.controlButtons {
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.inner {
+    position: relative;
+}
+
+.dateWrapper,
+.quantity {
+    color: color($black a(50%));
+}
+
+.dateWrapper {
+    font-size: $font-size-small;
+}
+
+.price {
+    padding: 0 15px;
+    color: color($black a(50%));
+}
+
+.link {
+    position: absolute;
+    text-decoration: underline;
+    align-self: center;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+}

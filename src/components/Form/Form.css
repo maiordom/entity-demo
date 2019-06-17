@@ -1,0 +1,63 @@
+@import '../../assets/variables.css';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-small;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.row:first-child {
+    margin-top: 0;
+}
+
+.field {
+    width: 100%;
+}
+
+.label {
+    font-size: $font-size-small;
+}
+
+.error {
+    color: $orangered;
+    font-size: $font-size-medium;
+    text-align: center;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.errorField {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.errorSimple {
+    color: $orangered;
+    font-size: $font-size-small;
+    text-align: center;
+    line-height: 15px;
+    min-height: 15px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.error.hasDetails {
+    max-height: initial;
+}

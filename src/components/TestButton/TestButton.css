@@ -1,0 +1,10 @@
+.container {
+    background: #f5b105;
+    color: black;
+    display: inline-flex;
+    line-height: 40px;
+    height: 40px;;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}

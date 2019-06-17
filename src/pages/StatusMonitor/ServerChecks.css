@@ -1,0 +1,25 @@
+@import '../../assets/variables.css';
+
+.check {
+    min-width: 150px;
+    min-height: 100px;
+    cursor: pointer;
+    background: $white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 10px 10px 0;
+}
+
+.checkMode {
+    color: color($black a(50%));
+}
+
+.addCheck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus path {
+    fill: color($black a(10%));
+}

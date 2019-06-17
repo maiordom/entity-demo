@@ -1,0 +1,40 @@
+@import '../../assets//variables.css';
+
+.container {
+    position: fixed;
+    top: 0;
+    background: color($athens-gray a(97%));
+    z-index: 100;
+    width: calc(100vw - 250px);
+    height: 100vh;
+    display: none;
+}
+
+.isVisible {
+    display: block;
+}
+
+.inner {
+    border: 3px dashed color($black a(20%));
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plus path {
+    fill: color($black a(10%));
+}
+
+.status {
+    height: 25px;
+    line-height: 25px;
+    color: $orangered;
+    text-align: center;
+}

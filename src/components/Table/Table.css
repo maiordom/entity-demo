@@ -1,0 +1,51 @@
+@import '../../assets/variables.css';
+
+.table {
+    border-collapse: collapse;
+}
+
+.cell,
+.th {
+    line-height: 20px;
+    padding: 5px 20px 5px 0;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.null {
+    opacity: .2;
+}
+
+.object {
+    line-height: 25px;
+}
+
+.link {
+    border-bottom: 1px dashed $black;
+    cursor: pointer;
+}
+
+.th {
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    filter: blur(0.0000001px);
+}
+
+.thead th {
+    border-bottom: 2px solid $black;
+}
+
+.cell {
+    border-bottom: 1px solid color($black a(20%));
+}
+
+.row:hover .cell:not(.control) {
+    background: color($white a(50%));
+}
+
+.control {
+    vertical-align: middle;
+    border-bottom-color: transparent;
+    padding: 0 0 0 15px;
+}
